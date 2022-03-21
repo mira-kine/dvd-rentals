@@ -3,10 +3,10 @@
 SELECT
     *
 FROM
-    address
-INNER JOIN
     city
+INNER JOIN
+    address
 ON
-    address.city_id = city.city_id
+    city.city_id = address.city_id
 WHERE
 	city.city = 'Dundee';
